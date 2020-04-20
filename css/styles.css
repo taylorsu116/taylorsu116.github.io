@@ -40,6 +40,19 @@ html, body {
     user-select: none;
 }
 
+a:link{
+ text-decoration: none;
+ color:black;
+}
+a:visited{
+    text-decoration: none;
+    color:black;
+   }
+a:hover{
+    text-decoration: underline;
+    color:black;
+}
+
 .container{
     padding: 20px;
     margin-top: 5px;
