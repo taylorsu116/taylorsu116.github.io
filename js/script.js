@@ -8,17 +8,24 @@ enter.addEventListener('keydown', keyPressed);
 document.body.style.backgroundColor = "lightGray";
 
 //gif, audio
-const vids = ["video00.gif","video01.gif","video02.gif", "video03.gif", "video04.gif"];
-const audio = ["audio00.mp3", "audio01.mp3", "audio02.mp3", "audio03.mp3", "audio04.mp3"];
+const vids = ["asset/video00.gif","asset/video01.gif","asset/video02.gif", "asset/video03.gif", "asset/video04.gif"];
+const audio = ["asset/audio00.mp3", "asset/audio01.mp3", "asset/audio02.mp3", "asset/audio03.mp3", "asset/audio04.mp3"];
 let vidPlaying = 0;
 let audioPlaying = 0;
 
+function preload(vids){
+    for (var i = 0; i <vids.length; i++) {
+        (new Image()).src = vids[i];
+    }
+}
 //default
-myVideo.src = "asset/" + vids[vidPlaying];
-myAudio.src = "asset/" + audio[audioPlaying];
+myVideo.src = vids[vidPlaying];
+myAudio.src = audio[audioPlaying];
 myAudio.play();
 
-
+myVideo.onload = function(){
+    
+}
 
 function keyPressed(){
     if(keyCode === 13){
@@ -71,9 +78,9 @@ function enterPressed(){
         document.getElementById("number").style.color = "black";
         document.getElementById("foot").style.color = "black";
     }
-    myAudio.src = "asset/" + audio[audioPlaying];
+    myAudio.src = audio[audioPlaying];
     myAudio.play();
-    myVideo.src = "asset/" + vids[vidPlaying];
+    myVideo.src =vids[vidPlaying];
     
 }
 
