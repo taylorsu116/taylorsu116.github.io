@@ -8,7 +8,7 @@ enter.addEventListener('keydown', keyPressed);
 document.body.style.backgroundColor = "lightGray";
 
 //gif, audio
-const vids = ["asset/video00.gif","asset/video01.gif","asset/video02.gif", "asset/video03.gif", "asset/video04.gif"];
+const vids = ["asset/video00-s.gif","asset/video01-s.gif","asset/video02-s.gif", "asset/video03-s.gif", "asset/video04-s.gif"];
 const audio = ["asset/audio00.mp3", "asset/audio01.mp3", "asset/audio02.mp3", "asset/audio03.mp3", "asset/audio04.mp3"];
 let vidPlaying = 0;
 let audioPlaying = 0;
