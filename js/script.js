@@ -18,6 +18,7 @@ function preload(vids){
         (new Image()).src = vids[i];
     }
 }
+
 //default
 myVideo.src = vids[vidPlaying];
 myAudio.src = audio[audioPlaying];
